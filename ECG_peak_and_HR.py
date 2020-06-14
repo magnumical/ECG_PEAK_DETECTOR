@@ -32,12 +32,6 @@ indexes = peakutils.indexes(data[:x], thres=0.5, min_dist=0.7)
 pplot(np.arange(0, x),data[:x],indexes)
 
 
-'''
-RtoR_samples = indexes[1]-indexes[0]
-RtoR_time=RtoR_samples/fs
-HR=60/RtoR_time
-hr=round(HR,3)
-'''
 
 beat=[]
 for i in range(len(indexes)):
